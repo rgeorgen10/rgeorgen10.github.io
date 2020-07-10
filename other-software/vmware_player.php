@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>VMWare Player - Georgen's Tech Resources</title>
+</head>
+<style>
+    .header {
+        width: 100%;
+        height: 35vh;
+        background-image: url("https://www.georgenswebsite.com/background.jpg");
+        background-size: cover;
+    }
+
+    a {
+        text-align: center
+    }
+
+    @media screen and (max-width: 600px) {
+        h1 b {
+            font-size: 10vw;
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+    <?php
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/navbar.php";
+    include_once($path);
+    ?>
+    <div class="w3-display-container w3-text-white header w3-center">
+        <div class="w3-display-middle w3-large">
+            <h1 style="font-size:4vw;color:black;"><b>VMWare Player</b></h1>
+        </div>
+    </div>
+    <div class="w3-margin">
+        <br>
+        <br>
+        <div class="w3-cell-row">
+
+            <div class="w3-container w3-cell">
+                <img src="/other-software/vmware_workstation.jpg" style="width: 40vw;" />
+            </div>
+            <div class="w3-container w3-cell">
+                <h5 class="w3-center" style="text-decoration:underline;"><b>VMWare Player</b></h5>
+                <p>VMware Workstation Player is a virtualization platform based off of VMware workstation used for commercial use and costs money. Feature limitations in the player version include a limited number of snapshots and support for less guest operating systems.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="w3-cell-row">
+
+            <div class="w3-container w3-cell">
+                <h5 class="w3-center" style="text-decoration: underline;"><b>System Requirements</b></h5>
+                <ul>
+                    <li>Operating Systems: Windows 7 / 8 / 10</li>
+                    <li>Memory: 2 GB</li>
+                    <li>Storage: 1.5 GB</li>
+                    <li>Processor: 1.3 GHz or faster Intel Pentium or later.</li>
+                </ul>
+            </div>
+            <div class="w3-container w3-cell">
+                <img src="/other-software/vmwareplayer2.jpg" style="width: 40vw;float:right;" />
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1 class="w3-center">Downloads</h1>
+        <br>
+        <div class="w3-container w3-cell w3-center w3-mobile w3-half">
+            <h3 class="w3-center w3-mobile" style="text-decoration: underline;"><b>Windows</b></h3>
+            <a class="w3-button w3-cyan" href="https://www.vmware.com/go/getplayer-win">64 Bits Only .exe <i class="fa fa-download"></i></a>
+        </div>
+        <div class="w3-container w3-cell w3-mobile w3-center w3-half">
+            <h3 class="w3-center" style="text-decoration: underline;"><b>Linux</b></h3>
+            <a class="w3-button w3-cyan" href="https://www.vmware.com/go/getplayer-linux">64 Bits Only .bundle <i class="fa fa-download"></i></a>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>
