@@ -100,24 +100,26 @@
                 width: 95%;
             }
         }
-
     </style>
     <title>Fedora LXQt | Georgen's Tech Resources</title>
     <link rel="icon" href="favicon.ico" />
 </head>
 
 <body>
-    <?php
-                $path = $_SERVER['DOCUMENT_ROOT'];
-                $path .= "/navbar.php";
-                include_once($path);
-        ?>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#content').load("menu.html");
+        });
+    </script>
     <div class="header">
         <img src="https://www.georgenswebsite.com/background.jpg" width="100%" height="500px" />
         <div class="imgtext"><strong>Fedora LXQt</strong></div>
     </div>
     <br>
-    <p>Fedora LXQt is an extremely lightweight version of Fedora using the LXQt Desktop which includes a set of lightweight applications to lower CPU usage, RAM usage, and storage needs. Tools include QTerminal, FeatherPad, and qpdfviewer.</p>
+    <p>Fedora LXQt is an extremely lightweight version of Fedora using the LXQt Desktop which includes a set of
+        lightweight applications to lower CPU usage, RAM usage, and storage needs. Tools include QTerminal, FeatherPad,
+        and qpdfviewer.</p>
     <br>
     <div class="center-image">
         <img style="text-align:center;" src="/operating-systems/fedoralxqt.jpg" width="65%" />
@@ -135,12 +137,16 @@
     <br>
     <br>
     <div style="text-align:center;">
-    <a class="button" href="https://download.fedoraproject.org/pub/fedora-secondary/releases/30/Spins/i386/iso/Fedora-LXQt-Live-i386-30-1.2.iso">32 Bits</a>
+        <a class="button"
+            href="https://download.fedoraproject.org/pub/fedora-secondary/releases/30/Spins/i386/iso/Fedora-LXQt-Live-i386-30-1.2.iso">32
+            Bits</a>
         <br>
         <br>
         <br>
         <br>
-    <a class="button" href="https://download.fedoraproject.org/pub/fedora/linux/releases/30/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-30-1.2.iso">64 Bits</a>
+        <a class="button"
+            href="https://download.fedoraproject.org/pub/fedora/linux/releases/30/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-30-1.2.iso">64
+            Bits</a>
     </div>
     <br>
     <br>

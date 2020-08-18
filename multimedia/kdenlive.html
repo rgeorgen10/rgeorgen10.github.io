@@ -27,11 +27,12 @@
 </style>
 
 <body>
-    <?php
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    $path .= "/navbar.php";
-    include_once($path);
-    ?>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#content').load("menu.html");
+        });
+    </script>
     <div class="w3-display-container w3-text-white header w3-center">
         <div class="w3-display-middle w3-large">
             <h1 style="font-size:4vw;color:black;"><b>KdenLive</b></h1>
@@ -47,7 +48,8 @@
             </div>
             <div class="w3-container w3-cell">
                 <h5 class="w3-center" style="text-decoration:underline;"><b>KdenLive</b></h5>
-                <p>Kdenlive is an opensource video editor and production software designed by KDE. Kdenlive is available for all the major operating systems and linux distros.</p>
+                <p>Kdenlive is an opensource video editor and production software designed by KDE. Kdenlive is available
+                    for all the major operating systems and linux distros.</p>
             </div>
         </div>
         <br>
@@ -74,15 +76,19 @@
         <br>
         <div class="w3-container w3-cell w3-center w3-mobile w3-third">
             <h3 class="w3-center w3-mobile" style="text-decoration: underline;"><b>Windows</b></h3>
-            <a class="w3-button w3-cyan" href="https://files.kde.org/kdenlive/release/kdenlive-20.04.1.exe">32 Bits or 64 Bits .exe <i class="fa fa-download"></i></a>
+            <a class="w3-button w3-cyan" href="https://files.kde.org/kdenlive/release/kdenlive-20.04.1.exe">32 Bits or
+                64 Bits .exe <i class="fa fa-download"></i></a>
         </div>
         <div class="w3-container w3-cell w3-mobile w3-center w3-third">
             <h3 class="w3-center" style="text-decoration: underline;"><b>Mac</b></h3>
-            <a class="w3-button w3-cyan" href="https://kdenlive.org/en/download/">Instructions <i class="fa fa-download"></i></a>
+            <a class="w3-button w3-cyan" href="https://kdenlive.org/en/download/">Instructions <i
+                    class="fa fa-download"></i></a>
         </div>
         <div class="w3-container w3-cell w3-mobile w3-center w3-third">
             <h3 class="w3-center" style="text-decoration: underline;"><b>Linux</b></h3>
-            <a class="w3-button w3-cyan" href="https://files.kde.org/kdenlive/release/kdenlive-20.04.1b-x86_64.appimage">64 Bits Only .appimage <i class="fa fa-download"></i></a>
+            <a class="w3-button w3-cyan"
+                href="https://files.kde.org/kdenlive/release/kdenlive-20.04.1b-x86_64.appimage">64 Bits Only .appimage
+                <i class="fa fa-download"></i></a>
             <br>
             <br>
         </div>

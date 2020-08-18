@@ -27,11 +27,12 @@
 </style>
 
 <body>
-    <?php
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    $path .= "/navbar.php";
-    include_once($path);
-    ?>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#content').load("menu.html");
+        });
+    </script>
     <div class="w3-display-container w3-text-white header w3-center">
         <div class="w3-display-middle w3-large">
             <h1 style="font-size:4vw;color:black;"><b>Notepad ++</b></h1>
@@ -47,7 +48,9 @@
             </div>
             <div class="w3-container w3-cell">
                 <h5 class="w3-center" style="text-decoration:underline;"><b>Notepad ++</b></h5>
-                <p>Notepad++ is an open-source code editing application similar to Visual Studio Code that is compatible with Windows, Mac OS X, and Linux. Notepad++ works with every popular program language such as HTML, CSS, and JavaScript and included plugins to add functions like FTP support.</p>
+                <p>Notepad++ is an open-source code editing application similar to Visual Studio Code that is compatible
+                    with Windows, Mac OS X, and Linux. Notepad++ works with every popular program language such as HTML,
+                    CSS, and JavaScript and included plugins to add functions like FTP support.</p>
             </div>
         </div>
         <br>
@@ -75,10 +78,14 @@
         <br>
         <div class="w3-container w3-center w3-mobile">
             <h3 class="w3-center w3-mobile" style="text-decoration: underline;"><b>Windows</b></h3>
-            <a class="w3-button w3-cyan" href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.8/npp.7.8.8.Installer.exe">32 Bits .exe <i class="fa fa-download"></i></a>
+            <a class="w3-button w3-cyan"
+                href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.8/npp.7.8.8.Installer.exe">32
+                Bits .exe <i class="fa fa-download"></i></a>
             <br>
             <br>
-            <a class="w3-button w3-cyan" href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.8/npp.7.8.8.Installer.x64.exe">64 Bits .exe <i class="fa fa-download"></i></a>
+            <a class="w3-button w3-cyan"
+                href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.8/npp.7.8.8.Installer.x64.exe">64
+                Bits .exe <i class="fa fa-download"></i></a>
             <br>
             <br>
         </div>
