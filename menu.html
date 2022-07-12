@@ -165,7 +165,7 @@
     function search() {
         document.getElementById("search").classList.toggle("hidden");
     }
-    if (window.location.pathname.includes("/")) {
+    if (window.location.pathname == "/") {
         document.getElementById("home").classList.add("w3-light-blue");
         document.getElementById("link1").classList.add("w3-light-blue");
     } else if (window.location.pathname.includes("/office-utilities/")) {
