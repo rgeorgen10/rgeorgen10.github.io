@@ -165,25 +165,25 @@
     function search() {
         document.getElementById("search").classList.toggle("hidden");
     }
-    if (window.location.pathname == "/") {
+    if (window.location.pathname.includes("/")) {
         document.getElementById("home").classList.add("w3-light-blue");
         document.getElementById("link1").classList.add("w3-light-blue");
-    } else if (window.location.pathname == "/office-utilities/") {
+    } else if (window.location.pathname.includes("/office-utilities/")) {
         document.getElementById("ou").classList.add("w3-light-blue");
         document.getElementById("link2").classList.add("w3-light-blue");
-    } else if (window.location.pathname == "/multimedia/") {
+    } else if (window.location.pathname.includes("/multimedia/")) {
         document.getElementById("mm").classList.add("w3-light-blue");
         document.getElementById("link3").classList.add("w3-light-blue");
-    } else if (window.location.pathname == "/operating-systems/") {
+    } else if (window.location.pathname.includes("/operating-systems/")) {
         document.getElementById("os").classList.add("w3-light-blue");
         document.getElementById("link4").classList.add("w3-light-blue");
-    } else if (window.location.pathname == "/development-software/") {
+    } else if (window.location.pathname.includes("/development-software/")) {
         document.getElementById("dev").classList.add("w3-light-blue");
         document.getElementById("link5").classList.add("w3-light-blue");
-    } else if (window.location.pathname == "/other-software/") {
+    } else if (window.location.pathname.includes("/other-software/")) {
         document.getElementById("other").classList.add("w3-light-blue");
         document.getElementById("link6").classList.add("w3-light-blue");
-    } else if (window.location.pathname == "/random-articles/") {
+    } else if (window.location.pathname.includes("/random-articles/")) {
         document.getElementById("ra").classList.add("w3-light-blue");
         document.getElementById("link7").classList.add("w3-light-blue");
     }
