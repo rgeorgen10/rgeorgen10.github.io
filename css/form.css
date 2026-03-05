@@ -9,7 +9,7 @@ label {
 
 margin-right: .3em; 
 
-width: 3em;  /* I made this deliberately wide – come up with your own optimal width */ 
+width: 5em;  /* I made this deliberately wide – come up with your own optimal width */ 
 
 display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */ 
 
