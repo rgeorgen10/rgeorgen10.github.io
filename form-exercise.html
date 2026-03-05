@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Forms Exercise One - labels and more</title>
+<title>Proposal Form - Forms Excercise 1</title>
  <link rel="stylesheet"  href="css/form.css" />  
 
  
@@ -24,8 +24,9 @@
 <div id="formcol1">
 
 
- <h2>Proposal Form</h2>
- <h3>Speaker Info</h3>
+ <h1>Proposal Form</h1>
+ <fieldset>
+ <legend>Speaker Info</legend>
  <ul>
 	<li>
         <span>*First Name:</span>
@@ -53,15 +54,15 @@
 	<input id="address1" class="reqfield" name="address1" type="text" title="Required field" />
 </li>
 </ul>
-
+</fieldset>
 </div> <!-- end of formcol1 div -->
     <div id="multchoice">
-    
-    <h3>Type of Presentation</h3>
+    <fieldset>
+    <legend>Type of Presentation</legend>
     
         <p><span>Lecture:</span>	<span><input value="1" id="TypeofPres_lec" name="p-type" type="radio" /> </span>
            <span>Lab:</span>	<span><input value="2" id="TypeofPres_lab" name="p-type" type="radio"  /></span></p>
-           
+    </fieldset>
  	<p class="submit-button">    
 <input type="submit" value="Submit your proposal" /></p>
     </div> <!-- end of multchoice div -->
