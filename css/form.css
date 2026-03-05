@@ -58,8 +58,8 @@ div#formcol1 input {
 /* div for radio buttons and check boxes */
 
 #multchoice {
-	clear:left;
-	margin-left:.5%;	
+	clear:none;
+	margin-left:1%;	
 }
 
 #multchoice input, #multchoice span {
@@ -67,7 +67,7 @@ div#formcol1 input {
 }
 
 #multchoice span {	
-	margin: 0 3pm;
+	margin: 0 1pm;
 }
 
 .submit-button {
