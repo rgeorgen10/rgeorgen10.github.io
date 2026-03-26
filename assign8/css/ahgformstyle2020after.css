@@ -15,7 +15,7 @@ outline:solid #03C medium;
 	font-weight:bold;
 }
 
-input[required] {
+input[required], textarea[required] {
     background-color: rgb(231, 144, 144); /* change to your desired color, e.g., an off-white */
 }
 .outline3 {
@@ -29,4 +29,3 @@ input[required] {
 	font-size:120%;
 	font-weight:bold;
 }
-.
