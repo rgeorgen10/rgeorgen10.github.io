@@ -7,9 +7,6 @@ label, input:active + label, label[for]:focus, label[for]:active {
 color: #BF1722 !important;
 background-color: #fff2a8 !important;
 outline:solid #03C medium;
-
-ul {
-	padding-bottom: 10px;
 }
 
 #formstart {
@@ -18,6 +15,9 @@ ul {
 	font-weight:bold;
 }
 
+input[required] {
+    background-color: rgb(231, 144, 144); /* change to your desired color, e.g., an off-white */
+}
 .outline3 {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:150%;
