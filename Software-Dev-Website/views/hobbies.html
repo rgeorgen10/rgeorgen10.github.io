@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+| Bootstrap class              | Element using it                         | What it does                                      |
+|------------------------------|-------------------------------------------|---------------------------------------------------|
+| navbar navbar-expand-lg      | <nav>                                     | Creates a responsive navigation bar.              |
+| container py-4               | <main>                                    | Centers content and adds vertical padding.        |
+| row row-cols-1 row-cols-md-3 | <div class="row ...">                    | Creates responsive card columns across the page.  |
+-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="../resources/css/styles_hobbies.css">
+    <link rel="stylesheet" href="../resources/css/bootstrap/css/bootstrap.css">
+    <title>Georgen's Place | Hobbies</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">Georgen's Place</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- This is a list element-->
+                    <!-- id is an attribute that uniquely identifies the element -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <!--This list element is a child of the ul element-->
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Hobbies</h1>
+        </div>
+    </header>
+    <main class="container py-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <article class="card h-100">
+                    <img src="../resources/img/hockey.jpg" class="card-img-top" alt="Hockey Image">
+                    <div class="card-body">
+                        <h2 class="card-title text-info h4">Playing Hockey</h2>
+                        <h3 class="card-subtitle mb-2 text-body-secondary h6">Community and competition</h3>
+                        <p class="card-text">I started playing hockey when I was 10 years old. I started playing because
+                            one of our family friends runs a hockey team for people with disabilities. He encouraged me
+                            to join and said that he would teach me how to play hockey and I could help with the team. I
+                            started and it was the best decision I ever made. It's my favorite sport and the community
+                            around it is one of my favorite parts.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100">
+                    <img src="../resources/img/bowling.jpg" class="card-img-top" alt="Bowling Image">
+                    <div class="card-body">
+                        <h2 class="card-title text-info h4">Bowling</h2>
+                        <h3 class="card-subtitle mb-2 text-body-secondary h6">Learning the lane</h3>
+                        <p class="card-text">I've always enjoyed the sport of bowling. As an undersized guy, it was one
+                            of the few sports where size isn't as much of a factor. I really got into bowling in high
+                            school when I took a bowling class. I improved greatly throughout the class and got my own
+                            bowling ball drilled. After a few years, I decided to switch to bowling two handed. From
+                            there, I really got into the game learning about how to play the lane, different types of
+                            bowling balls, and strategies.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100">
+                    <a title="Larry Ewing (lewing@isc.tamu.edu) and The GIMP (Attribution or Attribution), via Wikimedia Commons"
+                        href="https://commons.wikimedia.org/wiki/File:Tux.svg"><img width="250"
+                            alt="Tux, mascot of Linux"
+                            src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/250px-Tux.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"></a>
+                    <div class="card-body">
+                        <h2 class="card-title text-info h4">Linux Systems</h2>
+                        <h3 class="card-subtitle mb-2 text-body-secondary h6">Exploring technology</h3>
+                        <p class="card-text">About 8 years ago, after being a lifetime Windows user, I decided to
+                            install Ubuntu on my laptop and try using it as a daily driver. I kept Windows on a separate
+                            partition but I rarely ever used it. It was one of my favorite times using computers because
+                            everything was new again. On Windows, I already knew how to do most things but on Linux, I
+                            was just getting started. From there, I've used many different Linux distributions and still
+                            run Linux distros on all of the computers.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Contact Info</h2>
+        <p>Email: rige3130@colorado.edu</p>
+    </footer>
+</body>
+<script src="../resources/css/bootstrap/js/bootstrap.bundle.js"></script>
+
+</html>
