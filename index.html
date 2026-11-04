@@ -2,109 +2,55 @@
 <html>
 
 <head>
-    <style>
-        .header {
-            width: 100%;
-            height: 35vh;
-            background-image: url("https://georgenswebsite.com/background.jpg");
-            background-size: cover;
-        }
-
-        a {
-            text-align: center
-        }
-
-        @media screen and (max-width: 600px) {
-            h1 b {
-                font-size: 10vw;
-                text-align: center;
-            }
-
-            .mobile-hide {
-                display: none;
-            }
-        }
-    </style>
-    <title>Home - Georgen's Tech Resources</title>
-    <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="../resources/css/styles_home.css">
+  <link rel="stylesheet" href="../resources/css/bootstrap/css/bootstrap.css">
+  <title>Georgen's Place | Home</title>
 </head>
 
 <body>
-    <script src="jquery-3.5.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#content').load("menu.html");
-        });
-    </script>
-    <div id="content" width="100%"></div>
-    <div class="w3-display-container w3-text-white header w3-center">
-        <div class="w3-display-middle w3-large">
-            <h1 style="font-size:4vw;color:black;"><b>Georgen's Tech Resources</b></h1>
-        </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Georgen's Place</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hobbies.html">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="w3-margin">
-        <hr style="margin-right:15%;margin-left:15%" class="w3-border-grey w3-topbar">
-        <h2 class="w3-center">Posts</h2>
-        <hr style="margin-right:15%;margin-left:15%" class="w3-border-grey w3-topbar">
-        <div style="margin-right:15%;margin-left:15%">
-            <div class="w3-cell w3-container">
-                <img src="/office-utilities/iobit_unlocker_logo.png" class="mobile-hide" width="200px" height="200px" />
-            </div>
-            <div class="w3-cell w3-container">
-                <h2 class="w3-center"><a href="/office-utilities/iobit_unlocker.html">IOBit Unlocker</a></h2>
-                <p>IOBit unlocker is free "fix" to the windows error message "Cannot move because the file is in use".
-                    This software can determine what software is using the file and can stop the program from...<a
-                        href="/office-utilities/iobit_unlocker.html">[Read More]</a></p>
-            </div>
-            <br>
-            <hr class="w3-border-grey">
-            <br>
-            <div class="w3-cell w3-container">
-                <img src="multimedia/smplayer.jpg" class="mobile-hide" width="200px" />
-            </div>
-            <div class="w3-cell w3-container">
-                <h2 class="w3-center"><a href="multimedia/smplayer.html">SMPlayer</a></h2>
-                <p>SMPlayer is an alternative to VLC that supports Windows and Linux with built-in video codecs that can
-                    play most video formats including DVD's...<a href="/multimedia/smplayer.html">[Read More]</a></p>
-            </div>
-            <br>
-            <hr class="w3-border-grey">
-            <div class="w3-cell w3-container">
-                <div class="w3-cell w3-container">
-                    <img src="/operating-systems/ubuntu-server-logo.jpg" class="mobile-hide" width="200px" height="200px" />
-                </div>
-                <div class="w3-cell w3-container">
-                    <h2 class="w3-center"><a href="https://georgenswebsite.com/operating-systems/ubuntu-server.html">Ubuntu Server</a></h2>
-                    <p>Ubuntu server is an operating system based on the linux kernel made by Canonical intended for server
-                        usage. Ubuntu server is a much more modular OS...<a href="/operating-systems/ubuntu-server.html">[Read More]</a></p>
-                </div>
-                <br>
-            <hr class="w3-border-grey">
-            <br>
-            <div class="w3-cell w3-container">
-                <img src="/development-software/brackets_icon.png" class="mobile-hide" width="200px" />
-            </div>
-            <div class="w3-cell w3-container">
-                <h2 class="w3-center"><a href="/development-software/brackets.html">Adobe Brackets</a></h2>
-                <p>Adobe Brackets is an open-source code editor with a focus on web development. Adobe Brackets
-                    includes, HTML, CSS, JavaScript, PHP and many other code languages. Other Features...<a
-                        href="/development-software/brackets.html">[Read More]</a></p>
-            </div>
-            <br>
-            <hr class="w3-border-grey">
-            <div class="w3-cell w3-container">
-                <div class="w3-cell w3-container">
-                    <img src="/other-software/lutris-icon.png" class="mobile-hide" width="200px" height="200px" />
-                </div>
-                <div class="w3-cell w3-container">
-                    <h2 class="w3-center"><a href="/other-software/lutris.html">Lutris</a></h2>
-                    <p>Lutris is an open-source game client for linux. The goal of steam is to make windows only games play
-                        on Linux without a lot of advanced configuration. Games from Steam, Battle.NET...<a href="/other-software/lutris.html">[Read
-                            More]</a></p>
-                </div>
-                <br>
-        </div>
+  </nav>
+  <div class="hero">
+    <h1>Home</h1>
+  </div>
+  </header>
+  <div class="content">
+    <div class="container-md bg-light p-5 rounded">
+      <h2>Welcome to my personal website!</h2>
+      <p>My name is Georgen and I am a student at the University of Colorado Boulder. I am currently pursuing a degree
+        in
+        Computer Science and I have a passion for web development and programming. This website serves as a portfolio to
+        showcase my projects, hobbies, and resume.</p>
     </div>
+  </div>
+  <footer class="align-bottom">
+    <h2>Contact Info</h2>
+    <p>Email: rige3130@colorado.edu</p>
+  </footer>
 </body>
+<script src="../resources/css/bootstrap/js/bootstrap.bundle.js"></script>
 
 </html>
