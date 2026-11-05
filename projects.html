@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../resources/css/styles_projects.css">
-    <link rel="stylesheet" href="../resources/css/bootstrap/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/resources/css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/resources/css/styles_projects.css">
     <title>Georgen's Place | Projects</title>
 </head>
 
@@ -11,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Georgen's Place</a>
+                <a class="navbar-brand" href="/">Georgen's Place</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,62 +37,108 @@
             </div>
         </nav>
         <div class="hero">
-            <h1>Projects</h1>
+            <div class="hero-copy">
+                <p class="hero-eyebrow">Selected work and experiments</p>
+                <h1>Projects</h1>
+                <p class="hero-tagline">A collection of tools, games, and ideas I've built.</p>
+            </div>
         </div>
     </header>
-    <main class="container py-4">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <main class="container project-list py-5">
+        <div class="section-heading">
+            <p class="section-eyebrow">From Linux utilities to games</p>
+            <h2>Explore my projects</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col">
-                <article class="card h-100">
+                <article class="card project-card h-100">
                     <div class="card-body d-flex flex-column">
-                        <h2 class="card-title text-info h4">Arch Linux Install Assistant</h2>
-                        <h3 class="card-subtitle mb-2 text-body-secondary h6">Linux installation automation</h3>
-                        <p class="card-text">Installing Arch Linux can be a long winded task, even for experienced
-                            users. This project was an attempt from me to simplify this process. This script can be
-                            downloaded into the live ISO environment and assists with partitioning, base install, system
-                            configuration, and even installing an AUR manager and desktop environments.</p>
-                        <a class="card-link btn btn-primary"
-                            href="https://github.com/rgeorgen10/arch-linux-install-assistant" target="_blank"
-                            rel="noopener noreferrer">Project on GitHub</a>
+                        <h3 class="card-title h4">Arch Linux Install Assistant</h3>
+                        <p class="card-subtitle mb-3 text-body-secondary">Linux installation automation · C</p>
+                        <p class="card-text">Installing Arch Linux can be a long-winded task, even for experienced
+                            users. This tool guides you through partitioning, the base install, system configuration,
+                            and setting up an AUR manager and desktop environment.</p>
+                        <a class="card-link btn btn-primary mt-auto"
+                            href="https://github.com/rgeorgen10/Arch-Linux-Install-Assistant" target="_blank"
+                            rel="noopener noreferrer">View on GitHub</a>
                     </div>
                 </article>
             </div>
             <div class="col">
-                <article class="card h-100">
+                <article class="card project-card h-100">
                     <div class="card-body d-flex flex-column">
-                        <h2 class="card-title text-info h4">NVIDIA Power Management Script Configuration</h2>
-                        <h3 class="card-subtitle mb-2 text-body-secondary h6">Graphics power management</h3>
-                        <p class="card-text">Setting up NVIDIA Optimus on Linux systems is a complex task and took me
-                            many hours to figure out. To solve this, I made a Python script that adds the necessary
-                            configuration files to the system. With this configuration, the system should prioritize the
-                            integrated GPU and only use the dedicated GPU when needed.</p>
-                        <a class="card-link btn btn-primary"
-                            href="https://github.com/rgeorgen10/nvidia-power-management" target="_blank"
-                            rel="noopener noreferrer">Project on GitHub</a>
+                        <h3 class="card-title h4">NVIDIA Power Management</h3>
+                        <p class="card-subtitle mb-3 text-body-secondary">Graphics power management · Python</p>
+                        <p class="card-text">A Python utility that creates the configuration files needed for
+                            fine-grained NVIDIA Optimus power management on Linux, prioritizing the integrated GPU and
+                            using the dedicated GPU when needed.</p>
+                        <a class="card-link btn btn-primary mt-auto"
+                            href="https://github.com/rgeorgen10/NVIDIA-Power-Management" target="_blank"
+                            rel="noopener noreferrer">View on GitHub</a>
                     </div>
                 </article>
             </div>
             <div class="col">
-                <article class="card h-100">
+                <article class="card project-card h-100">
                     <div class="card-body d-flex flex-column">
-                        <h2 class="card-title text-info h4">Connect4 Game in Assembly</h2>
-                        <h3 class="card-subtitle mb-2 text-body-secondary h6">Computer architecture practice</h3>
-                        <p class="card-text">This was a project for Computer Architecture class. This project was a good
-                            challenge. Although the logic wasn't too difficult, the implementation was good practice and
-                            allowed me to learn the function of main memory, the cache, the registers, and the stack
-                            pointer.</p>
-                        <a class="card-link btn btn-primary" href="https://github.com/rgeorgen10/Connect4"
-                            target="_blank" rel="noopener noreferrer">Project on GitHub</a>
+                        <h3 class="card-title h4">Connect4 in Assembly</h3>
+                        <p class="card-subtitle mb-3 text-body-secondary">Computer architecture practice · Assembly</p>
+                        <p class="card-text">A Connect Four game built for a Computer Architecture class. Implementing
+                            the game was hands-on practice with main memory, cache, registers, and the stack pointer.</p>
+                        <a class="card-link btn btn-primary mt-auto" href="https://github.com/rgeorgen10/Connect4"
+                            target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card project-card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h4">Car Counter</h3>
+                        <p class="card-subtitle mb-3 text-body-secondary">Vote tallying CLI · Python</p>
+                        <p class="card-text">A small command-line program for tallying car-show votes, ranking results,
+                            and processing votes from a text file.</p>
+                        <a class="card-link btn btn-primary mt-auto" href="https://github.com/rgeorgen10/Car-Counter"
+                            target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card project-card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h4">KDE Plasma Sports Scores Widget</h3>
+                        <p class="card-subtitle mb-3 text-body-secondary">Sports scores and standings · QML</p>
+                        <p class="card-text">A KDE Plasma widget for checking scores, schedules, and standings across
+                            the NFL, NHL, NBA, and MLB.</p>
+                        <a class="card-link btn btn-primary mt-auto"
+                            href="https://github.com/rgeorgen10/KDE-Plasma-Sports-Scores-Widget" target="_blank"
+                            rel="noopener noreferrer">View on GitHub</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card project-card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h4">Tic-Tac-Toe</h3>
+                        <p class="card-subtitle mb-3 text-body-secondary">Game · C++</p>
+                        <p class="card-text">A C++ take on the classic Tic-Tac-Toe game.</p>
+                        <a class="card-link btn btn-primary mt-auto" href="https://github.com/rgeorgen10/Tic-Tac-Toe"
+                            target="_blank" rel="noopener noreferrer">View on GitHub</a>
                     </div>
                 </article>
             </div>
         </div>
+        <p class="github-more">See all my public repositories on
+            <a href="https://github.com/rgeorgen10?tab=repositories" target="_blank"
+                rel="noopener noreferrer">GitHub</a>.
+        </p>
     </main>
+
     <footer>
         <h2>Contact Info</h2>
         <p>Email: rige3130@colorado.edu</p>
     </footer>
+    <script src="/resources/css/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
-<script src="../resources/css/bootstrap/js/bootstrap.bundle.js"></script>
 
 </html>
