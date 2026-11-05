@@ -1,7 +1,9 @@
 body {
+  display: flex;
   margin: 0;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #f5f8fa;
 }
 
 .navbar.bg-body-tertiary {
@@ -10,19 +12,42 @@ body {
 
 .hero {
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45)), url("../img/background.jpg");
+  background-image: linear-gradient(110deg, rgba(7, 33, 54, 0.86), rgba(0, 79, 111, 0.48)),
+    url("../img/background.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
-  height: 280px;
+  min-height: 300px;
   justify-content: center;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.hero-copy {
+  max-width: 760px;
+}
+
+.hero-eyebrow {
+  color: #a7eaff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .hero h1 {
   color: white;
   font-size: clamp(2.5rem, 7vw, 5rem);
-  margin: 0;
+  font-weight: 700;
+  margin: 0 0 12px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+.hero-tagline {
+  color: white;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  margin: 0 auto;
 }
 
 .content {
@@ -32,11 +57,19 @@ body {
 }
 
 footer {
-    background-color: #00b0e6;
-    box-sizing: border-box;
-    color: white;
-    padding: 20px;
-    margin-top: auto;
-    text-align: center;
-    width: 100%;
+  background-color: #00b0e6;
+  box-sizing: border-box;
+  color: white;
+  padding: 20px;
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+}
+
+footer h2 {
+  font-size: 1.25rem;
+}
+
+footer p {
+  margin-bottom: 0;
 }
